@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet"> 
+
+    <link href="main.css" rel="stylesheet" type="text/css" media="screen" />
+    <title>Snake Game</title>
+  </head>
+  <body class="checkerboard">
+    <div class="start-UI">
+      <header class="title">Snake Game</header>
+      <p class="introducion">Move using arrows. Collect fruits to grow. Don't collide with yourself or a wall. Good luck! </p>
+      <div class="sizes-title"> Choose a map size to start:</div>
+      <div class="sizes">
+        <div>Small</div>
+        <div class="active">Medium</div>
+        <div>Large</div>
+        <div>Custom</div>
+        </div>
+        <div class="start-button">START!
+      </div>
+      <div class="custom-size">
+        <input autocomplete="off" class="map-size" type="text" min="5" max="30" size="1" value="8"> x <input autocomplete="off" class="map-size" type="text" min="5" max="30" size="1" value="11">
+      </div> 
+      <div class="options-title">Game Options:</div>
+      <div class="options">
+        <div class="snake-speed option-name"> 
+          <span class="option-title">snake speed</span>
+          <div>slow</div>
+          <div class="active">medium</div>
+          <div>fast</div>
+          <div>custom</div>
+          <input autocomplete="off" type="text" size="1" value="10">
+        </div>
+        <div class="fruit-count option-name"> 
+          <span class="option-title">fruit count</span>
+          <div class="active">single</div>
+          <div>few</div>
+          <div>many</div>
+          <div>custom</div>
+          <input autocomplete="off" type="text" size="1" value="1">
+        </div>
+        <div class="game-mode option-name"> 
+          <span class="option-title">game mode</span>
+          <div class="active">normal</div>
+        </div>
+      </div>
+      <div class="options-title">Visuals:</div>
+      <div class="visuals options">
+        <div class="snake-color option-name"> 
+          <span class="option-title">snake color</span>
+          <div class="active">white</div>
+          <div>red</div>
+          <div>blue</div>
+          <div>custom <input autocomplete="off" class="color-picker" type="color"></div>
+        </div>
+        <div class="fruit-color option-name"> 
+          <span class="option-title">fruit color</span>
+          <div class="active">red</div>
+          <div>blue</div>
+          <div>yellow</div>
+          <div>custom <input autocomplete="off" class="color-picker" type="color"></div>
+        </div>
+        <div class="map-color option-name"> 
+          <span class="option-title">map color</span>
+          <div class="active">green</div>
+          <div>white</div>
+          <div>black</div>
+          <div>custom <input autocomplete="off" class="color-picker" type="color"></div>
+        </div>
+      </div>
+    </div>
+    <div class="field"></div>
+
+    <script src="variables.js"></script>
+    <script type="module" src="helperFunctions.mjs"></script>
+    <script type="module" src="mainFunctions.mjs"></script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="eventListeners.mjs"></script>
+</html>

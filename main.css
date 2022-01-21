@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:root {
+  --main-color-2: rgb(0, 141, 12);
+  --main-color-1: rgb(0, 117, 10);
+  --background-size: 100px;
+}
+
+.checkerboard {
+  background-color: var(--main-color-1);
+  background-image: linear-gradient(
+      45deg,
+      var(--main-color-2) 25%,
+      transparent 25%,
+      transparent 75%,
+      var(--main-color-2) 75%,
+      var(--main-color-2)
+    ),
+    linear-gradient(
+      45deg,
+      var(--main-color-2) 25%,
+      transparent 25%,
+      transparent 75%,
+      var(--main-color-2) 75%,
+      var(--main-color-2)
+    );
+  background-size: var(--background-size) var(--background-size);
+  background-position: 0 0,
+    calc(var(--background-size) / 2) calc(var(--background-size) / 2);
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  background-color: green;
+}
+
+input {
+  color: white;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+  background-color: transparent;
+  outline: none;
+  display: block;
+  text-align: center;
+  border: 2px solid rgb(202, 255, 209);
+  margin-left: 5px;
+  font-size: 20px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.color-picker {
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  width: 20px;
+  border: none;
+}
+
+.map-size {
+  font-size: 30px;
+  position: relative;
+  margin: 2px 20px;
+  width: 50px;
+}
+
+.start-button {
+  position: absolute;
+  margin-left: 65%;
+  margin-top: 50px;
+  font-size: 48px;
+  color: rgb(0, 160, 27);
+  cursor: pointer;
+  background-color: rgb(255, 233, 31);
+  padding: 10px 20px;
+  border-radius: 100px;
+}
+
+.sizes-title {
+  margin-top: 25px;
+  font-weight: 600;
+  font-size: 28px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.options-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 36px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 96px;
+}
+
+.option-name {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+}
+
+.option-name div:hover {
+  cursor: pointer;
+}
+
+.option-title {
+  font-size: 24px;
+}
+
+.visuals {
+  display: flex;
+}
+
+.title {
+  color: rgb(251, 255, 0);
+  font-size: 78px;
+  display: flex;
+  justify-content: center;
+}
+
+.sizes {
+  display: flex;
+  gap: 72px;
+  justify-content: center;
+  font-size: 36px;
+}
+
+.custom-size {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 86px;
+}
+
+.introducion {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.active {
+  color: red;
+}
+
+.square {
+  background-color: black;
+}
+
+.field {
+  display: none;
+  margin: auto;
+  width: max-content;
+  border: 10px solid black;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
